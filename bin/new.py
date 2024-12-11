@@ -41,13 +41,13 @@ def get_args() -> Args:
     parser.add_argument('-n',
                         '--name',
                         type=str,
-                        default=defaults.get('name', username),
+                        default='Daniel T Lee',
                         help='Name for docstring')
 
     parser.add_argument('-e',
                         '--email',
                         type=str,
-                        default=defaults.get('email', f'{username}@{hostname}'),
+                        default='daniel.ts.lee@gmail.com',
                         help='Email for docstring')
 
     parser.add_argument('-p',
