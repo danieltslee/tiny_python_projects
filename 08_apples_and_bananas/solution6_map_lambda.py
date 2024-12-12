@@ -38,8 +38,8 @@ def main():
     args = get_args()
     vowel = args.vowel
     text = map(
-        lambda c: vowel if c in 'aeiou' else vowel.upper()
-        if c in 'AEIOU' else c, args.text)
+        lambda c: vowel if c in 'aeiou' else \
+        vowel.upper() if c in 'AEIOU' else c, args.text)
 
     print(''.join(text))
 

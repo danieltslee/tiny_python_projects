@@ -6,6 +6,7 @@ from pprint import pprint
 with open('inputs/exercises.csv') as fh:
     reader = csv.DictReader(fh, delimiter=',')
     records = []
+    print(reader)
     for rec in reader:
         records.append(rec)
 
